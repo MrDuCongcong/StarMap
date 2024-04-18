@@ -1,0 +1,28 @@
+{
+	"name": "StarMap",
+	"version": "1.0.0",
+	"description": "Local visualization application",
+	"main": "./out/main/index.js",
+	"scripts": {
+		"start": "electron-vite preview",
+		"dev": "electron-vite dev",
+		"build": "electron-vite build",
+		"format": "prettier --write ."
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"electron": "^30.0.0",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	},
+	"devDependencies": {
+		"@types/node": "^20.12.7",
+		"@types/react": "^18.2.79",
+		"@types/react-dom": "^18.2.25",
+		"electron-vite": "^2.1.0",
+		"prettier": "^3.2.5",
+		"typescript": "^5.4.5"
+	}
+}
