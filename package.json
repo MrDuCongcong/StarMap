@@ -1,11 +1,11 @@
 {
-	"name": "StarMap",
+	"name": "star-map",
 	"version": "1.0.0",
 	"description": "Local visualization application",
 	"main": "./out/main/index.js",
 	"scripts": {
 		"start": "electron-vite preview",
-		"dev": "electron-vite dev",
+		"dev": "electron-vite",
 		"build": "electron-vite build",
 		"format": "prettier --write ."
 	},
@@ -21,6 +21,7 @@
 		"@types/node": "^20.12.7",
 		"@types/react": "^18.2.79",
 		"@types/react-dom": "^18.2.25",
+		"@vitejs/plugin-react": "^4.2.1",
 		"electron-vite": "^2.1.0",
 		"prettier": "^3.2.5",
 		"typescript": "^5.4.5"
