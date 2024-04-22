@@ -1,5 +1,11 @@
+import Editor from '@/components/editor/index';
+
 const Project = () => {
-  return <div>this is project view</div>;
+	return (
+		<div>
+			<Editor />
+		</div>
+	);
 };
 
 export default Project;
