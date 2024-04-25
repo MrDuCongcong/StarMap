@@ -13,9 +13,13 @@
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
+		"@ant-design/icons": "^5.3.6",
+		"antd": "^5.16.4",
 		"electron": "^30.0.0",
+		"interactjs": "^1.10.27",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
+		"react-grid-layout": "^1.4.4",
 		"react-router-dom": "^6.22.3"
 	},
 	"devDependencies": {
@@ -24,8 +28,10 @@
 		"@types/react-dom": "^18.2.25",
 		"@vitejs/plugin-react": "^4.2.1",
 		"electron-vite": "^2.1.0",
+		"postcss-nesting": "^12.1.2",
 		"prettier": "^3.2.5",
-		"scss": "^0.2.4",
+		"stylelint": "^16.4.0",
+		"stylelint-config-standard": "^36.0.0",
 		"typescript": "^5.4.5"
 	}
 }

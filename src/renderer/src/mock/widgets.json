@@ -1,0 +1,14 @@
+[
+	{
+		"type": "echarts",
+		"subType": "line",
+		"image": "",
+		"name": "折线图"
+	},
+	{
+		"type": "echarts",
+		"subType": "line",
+		"image": "",
+		"name": "柱状图"
+	}
+]

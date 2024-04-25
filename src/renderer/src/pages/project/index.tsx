@@ -1,11 +1,7 @@
-import Editor from '@/components/editor/index';
+import Editor from '@/components/editor';
 
 const Project = () => {
-	return (
-		<div>
-			<Editor />
-		</div>
-	);
+	return <Editor />;
 };
 
 export default Project;

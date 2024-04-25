@@ -1,4 +1,6 @@
-import { app, BrowserWindow } from 'electron';
+import { app, BrowserWindow, session  } from 'electron';
+import path from 'node:path';
+import os from 'node:os';
 
 const createWindow = () => {
     const win = new BrowserWindow({
@@ -7,7 +9,9 @@ const createWindow = () => {
         autoHideMenuBar: true,
     });
 
-   console.log('1111', app.isPackaged, process.env['ELECTRON_RENDERER_URL'])
+
+
+
     if (!app.isPackaged && process.env['ELECTRON_RENDERER_URL']) {
         win.loadURL(process.env['ELECTRON_RENDERER_URL']);
     } else {
@@ -15,7 +19,12 @@ const createWindow = () => {
     }
 }
 
-app.whenReady().then(() => {
+app.whenReady().then(async () => {
+    const reactDevToolsPath = path.join(
+        os.homedir(),
+        'AppData\\Local\\Google\\Chrome\\User Data\\Default\\Extensions\\fmkadmapgofadopljbjfkapdkoienihi\\5.1.0_0'
+    );
+    await session.defaultSession.loadExtension(reactDevToolsPath, { allowFileAccess: true });
     createWindow();
 });
 

@@ -1,7 +1,14 @@
+import Dnd from '../dnd';
+import Graph from "../graph";
+import styles from './index.module.css';
+
 const Editor = () => {
     return (
-        <div>这是编辑器</div>
-    );
+        <div className={styles.editor}>
+            <Dnd/>
+            <Graph/>
+        </div>
+    )
 };
 
 export default Editor;

@@ -1,0 +1,30 @@
+.dnd {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1000;
+    border: 1px solid #ccc;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    .dnd-header {
+        .dnd-toggle-button {
+            float: right;
+        }
+    }
+    .dnd-content {
+        flex: 1;
+        display: grid;
+        grid-gap: 20px 20px;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10px;
+        .content-item {
+            border: 1px solid #333;
+            height: 120px;
+            cursor: move;
+        }
+    }
+}
+.dnd-expand {
+    width: 350px;
+}

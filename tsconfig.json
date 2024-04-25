@@ -2,7 +2,7 @@
 	"files": [],
 	"compilerOptions": {
 		"allowSyntheticDefaultImports": true,
-		"esModuleInterop": true
+		"esModuleInterop": true,
 	},
 	"references": [
 //		{
@@ -11,5 +11,5 @@
 		{
 			"path": "./tsconfig.web.json"
 		}
-	]
+	],
 }

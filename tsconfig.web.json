@@ -1,8 +1,10 @@
 {
 	"compilerOptions": {
 		"jsx": "react-jsx",
+		"esModuleInterop": true,
+		"resolveJsonModule": true,
 		"paths": {
-			"@renderer/*": ["src/renderer/*"]
+			"@/*": ["src/renderer/src/*"]
 		}
 	}
 }
