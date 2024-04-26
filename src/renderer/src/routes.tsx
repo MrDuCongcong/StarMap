@@ -1,5 +1,5 @@
 import App from './App'
-import Project from "./pages/project";
+import DashboardList from "./pages/DashboardList";
 
 const routes = [
     {
@@ -7,8 +7,8 @@ const routes = [
         element: <App/>,
         children: [
             {
-                path: 'project',
-                element: <Project/>,
+                path: 'dashboardList',
+                element: <DashboardList/>,
             }
         ]
     }
