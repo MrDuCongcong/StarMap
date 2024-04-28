@@ -17,10 +17,12 @@
 		"antd": "^5.16.4",
 		"electron": "^30.0.0",
 		"interactjs": "^1.10.27",
+		"knex": "^3.1.0",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"react-grid-layout": "^1.4.4",
-		"react-router-dom": "^6.22.3"
+		"react-router-dom": "^6.22.3",
+		"sqlite3": "^5.1.7"
 	},
 	"devDependencies": {
 		"@types/node": "^20.12.7",

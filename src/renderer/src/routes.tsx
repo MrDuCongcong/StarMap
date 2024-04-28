@@ -1,5 +1,6 @@
 import App from './App'
-import DashboardList from "./pages/DashboardList";
+import Portal from '@/pages/portal';
+import DashboardList from "@/pages/dashboardList";
 
 const routes = [
     {
@@ -7,9 +8,15 @@ const routes = [
         element: <App/>,
         children: [
             {
-                path: 'dashboardList',
-                element: <DashboardList/>,
-            }
+                path: 'portal',
+                element: <Portal/>,
+                children: [
+                    {
+                        path: 'dashboardList',
+                        element: <DashboardList/>
+                    }
+                ]
+            },
         ]
     }
 ];

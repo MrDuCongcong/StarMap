@@ -1,13 +1,16 @@
+import React, { useState, forwardRef, useImperativeHandle } from "react";
 import {Modal, Form, Input, Button} from "antd";
-import React, { useState } from "react";
 
-const CreateDashboard:React.FC = () => {
+const DashboardEdit:React.FC = forwardRef((props, ref) => {
     const [isModalVisible, setIsModalVisible] = useState(false);
     const [ form ] = Form.useForm();
 
-    const showModal = () => {
-        setIsModalVisible(true);
-    }
+    useImperativeHandle(ref,() => {
+        const showModal = () => {
+            setIsModalVisible(true);
+        }
+    });
+
     const hideModal = () => {
         setIsModalVisible(false);
     }
@@ -33,8 +36,8 @@ const CreateDashboard:React.FC = () => {
             </Form.Item>
         </Form>
     </Modal>;
-};
+});
 
-export default CreateDashboard;
+export default DashboardEdit;
 
 

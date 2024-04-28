@@ -5,7 +5,7 @@ const App = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-      navigate('/project')
+      navigate('/portal')
   }, [])
 
   return (
